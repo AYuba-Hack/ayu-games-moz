@@ -41,3 +41,44 @@ html{scroll-padding-top:98px}body{background:radial-gradient(ellipse 55% 470px a
 .article-body a:focus-visible{outline-offset:4px}
 .contact-direct{background:rgba(176,255,122,.05);border:1px solid rgba(176,255,122,.2)}
 @media(max-width:760px){.article-body ol{padding-left:1.3rem}.article-body ol li{padding-left:3px}}
+
+
+/* AYU Games MOZ — cartões mobile compactos e leitura optimizada (v1.3) */
+@media(max-width:760px){
+  .hero-feature-art{height:124px}
+  .hero-feature-art img{object-position:58% 50%}
+  .hero-feature-bottom{padding:10px 16px 17px;gap:7px}
+  .hero-feature-bottom strong{font-size:20px;line-height:1.2}
+  .card>a img{width:100%;height:132px;aspect-ratio:auto;object-fit:cover}
+  .article-banner{width:100%;height:clamp(140px,33vw,180px);max-height:180px;object-fit:cover;object-position:50% 45%}
+  .categories-section{padding-top:43px}
+  .section{padding-top:49px}
+}
+@media(max-width:540px){
+  .cards{gap:11px}
+  .card{display:grid;grid-template-columns:116px minmax(0,1fr);min-height:155px;border-radius:14px}
+  .card>a{grid-column:1;grid-row:1;display:block;min-width:0;overflow:hidden}
+  .card>a img{display:block;width:100%;height:100%;min-height:155px;aspect-ratio:auto;object-fit:cover;object-position:61% center}
+  .card-body{grid-column:2;grid-row:1;padding:13px 14px 11px;min-width:0;justify-content:space-between}
+  .card h3{font-size:15.5px;line-height:1.3;margin:7px 0 6px}
+  .card p{font-size:11.5px;line-height:1.4;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;margin:0 0 9px}
+  .card .card-foot{padding-top:8px;font-size:11px}
+  .card .card-foot span{display:none}
+  .card .card-foot a{min-height:28px;display:inline-flex;align-items:center}
+  .tag{font-size:9px;padding:3px 7px}
+  .hero-feature-art{height:112px}
+  .hero-feature-bottom strong{font-size:19px}
+  .article-banner{height:clamp(126px,34vw,155px);max-height:155px}
+  .category-tile{min-height:119px}
+}
+@media(max-width:370px){
+  .card{grid-template-columns:98px minmax(0,1fr);min-height:144px}
+  .card>a img{min-height:144px}
+  .card-body{padding:11px}
+  .card h3{font-size:14px}
+  .card p{-webkit-line-clamp:2;font-size:11px}
+  .hero-feature-art{height:96px}
+  .article-banner{height:124px}
+}
+/* Preferências de acessibilidade e foco visível */
+@media(hover:hover){.card:focus-within{border-color:#baff6d}}
