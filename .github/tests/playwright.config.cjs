@@ -8,7 +8,7 @@ module.exports=defineConfig({
   reporter: [['list'],['html', { outputFolder:'qa-report', open:'never' }]],
   retries: 1,
   workers: 2,
-  use: { baseURL: 'http://127.0.0.1:8765', trace: 'retain-on-failure', screenshot: 'only-on-failure' },
+  use: { baseURL: 'http://127.0.0.1:8765', channel: 'chrome', trace: 'retain-on-failure', screenshot: 'only-on-failure' },
   projects: [
     { name: 'Chromium-desktop', use: { ...devices['Desktop Chrome'] } },
     { name: 'Pixel-7-mobile', use: { ...devices['Pixel 7'], browserName:'chromium' } },

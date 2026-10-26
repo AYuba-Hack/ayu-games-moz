@@ -22,7 +22,7 @@ jobs:
       - name: Instalar Playwright
         run: |
           npm install --no-save @playwright/test@1.56.1
-          npx playwright install --with-deps chromium
+          google-chrome --version
       - name: Executar testes responsivos e funcionais
         run: npx playwright test --config=.github/tests/playwright.config.cjs
       - name: Guardar relatório, imagens e vídeos de falha
