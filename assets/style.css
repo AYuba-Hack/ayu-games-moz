@@ -26,3 +26,18 @@ html{scroll-padding-top:98px}body{background:radial-gradient(ellipse 55% 470px a
 @media (max-width:370px){
   .hero-feature-art{height:125px}
 }
+
+
+/* Refinamentos de experiência e acessibilidade — v1.2 */
+@media (min-width:721px) and (max-width:760px){
+ .menutoggle{display:block}
+ .navlinks{display:none}
+ .navlinks.open{display:flex}
+ .nav-action{display:none}
+}
+.article-body ol{padding-left:1.45rem;margin:16px 0 26px;color:#ced9e6}
+.article-body ol li{padding-left:5px;margin:0 0 11px;line-height:1.78}
+.article-body .practical{padding:1px 0}
+.article-body a:focus-visible{outline-offset:4px}
+.contact-direct{background:rgba(176,255,122,.05);border:1px solid rgba(176,255,122,.2)}
+@media(max-width:760px){.article-body ol{padding-left:1.3rem}.article-body ol li{padding-left:3px}}
