@@ -1,0 +1,37 @@
+name: QA do site (desktop e mobile)
+
+on:
+  push:
+    branches:
+      - qa-lancamento
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  navegador-e-mobile:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Instalar Playwright
+        run: |
+          npm install --no-save @playwright/test@1.56.1
+          npx playwright install --with-deps chromium
+      - name: Executar testes responsivos e funcionais
+        run: npx playwright test --config=.github/tests/playwright.config.cjs
+      - name: Guardar relatório, imagens e vídeos de falha
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: relatorio-qa-${{ github.sha }}
+          path: |
+            qa-report/
+            test-results/
+          retention-days: 30
+          if-no-files-found: ignore
