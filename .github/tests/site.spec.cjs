@@ -60,12 +60,12 @@ test('Pesquisa e filtros apresentam os artigos correctos',async ({page})=>{
  await page.locator('.filter[data-category="Mobile"]').click();
  await expect(page.locator('[data-post]:visible')).toHaveCount(2);
  await page.locator('.filter[data-category="Todos"]').click();
- await page.locator('[data-search]').fill('ping');
+ await page.locator('input[data-search]').fill('ping');
  await expect(page.locator('[data-post]:visible')).toHaveCount(1);
- await page.locator('[data-search]').fill('texto-inexistente-123');
+ await page.locator('input[data-search]').fill('texto-inexistente-123');
  await expect(page.locator('[data-post]:visible')).toHaveCount(0);
  await expect(page.locator('[data-empty]')).toBeVisible();
- await page.locator('[data-search]').fill('');
+ await page.locator('input[data-search]').fill('');
  await expect(page.locator('[data-post]:visible')).toHaveCount(6);
 });
 
