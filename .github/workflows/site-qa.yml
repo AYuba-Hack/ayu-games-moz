@@ -23,6 +23,7 @@ jobs:
         run: |
           npm install --no-save @playwright/test@1.56.1
           google-chrome --version
+          echo 'Chromium com emulação Pixel 7 e Desktop Chrome'
       - name: Executar testes responsivos e funcionais
         run: npx playwright test --config=.github/tests/playwright.config.cjs
       - name: Guardar relatório, imagens e vídeos de falha
