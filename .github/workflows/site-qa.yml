@@ -26,6 +26,15 @@ jobs:
           echo 'Chromium com emulação Pixel 7 e Desktop Chrome'
       - name: Executar testes responsivos e funcionais
         run: npx playwright test --config=.github/tests/playwright.config.cjs
+      - name: Criar ZIP da versao validada
+        if: success()
+        run: |
+          mkdir -p qa-report
+          git archive --format=zip --output=qa-report/AYU-Games-MOZ-FINAL.zip HEAD
+          echo "Versao do AYU Games MOZ testada com Playwright, Chromium Desktop e Pixel 7." > qa-report/LEIA-ME-RESULTADO.txt
+          echo "Commit: ${GITHUB_SHA}" >> qa-report/LEIA-ME-RESULTADO.txt
+          echo "Publicacao: Cloudflare Pages integrado ao GitHub." >> qa-report/LEIA-ME-RESULTADO.txt
+          echo "O Search Console e AdSense exigem verificacao nas contas do proprietario." >> qa-report/LEIA-ME-RESULTADO.txt
       - name: Guardar relatório, imagens e vídeos de falha
         if: always()
         uses: actions/upload-artifact@v4
