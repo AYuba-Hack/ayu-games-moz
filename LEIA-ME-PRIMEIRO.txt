@@ -1,0 +1,61 @@
+AYU GAMES MOZ — BLOG DE JOGOS, VERSÃO INICIAL (26/10/2026)
+============================================================
+
+CONTEÚDO
+- Página inicial com pesquisa de artigos e categorias.
+- 6 artigos originais: jogos Mobile/PC, segurança e dados móveis.
+- Páginas Sobre, Transparência, Privacidade, Termos e Contacto.
+- Design escuro, adaptado a Android e PC, sem bibliotecas JS pesadas.
+- Ilustrações SVG originais, sem imagens de jogos protegidas por direitos de autor.
+- Sem códigos de anúncios, cookies de análise ou links remunerados activos.
+- O teu site AYU Solution não é alterado.
+
+PUBLICAR DE GRAÇA NO CLOUDFLARE PAGES
+1) Entra em dash.cloudflare.com e escolhe Workers & Pages.
+2) Clica Create application > Get started > Drag and drop your files.
+3) Cria um projecto NOVO, por exemplo ayu-games-moz (se disponível).
+4) Faz o upload do ZIP AYU-Games-MOZ.zip ou da pasta AYU-Games-MOZ.
+5) Clica Deploy site; abre o endereço efectivamente atribuído ao projecto.
+ATENÇÃO: projectos criados com Direct Upload não podem depois ser convertidos para integração Git no mesmo projecto. Para actualizações automáticas desde o princípio, cria antes um novo repositório GitHub e liga-o à Cloudflare Pages pela integração Git.
+
+ANTES DE DIVULGAR PUBLICAMENTE
+- Actualiza contacto.html com um email de contacto teu que autorizas tornar público.
+- Verifica artigos e conteúdos, melhora-os com testes próprios e screenshots teus.
+- Confirma que cada produto ou campanha aceita Moçambique e o tráfego do blog.
+- Actualiza a Política de Privacidade quando activares publicidade ou análises.
+- Depois de conheceres o URL, executa: python gerar_sitemap.py https://ENDERECO-REAL.pages.dev
+  e publica novamente o site com sitemap.xml e robots.txt actualizados.
+- Usa Google Search Console para acompanhar indexação e pesquisas.
+
+AFILIADOS: COMO COMEÇAR
+A) Carry1st: https://www.carry1st.com/affiliate-program
+   A plataforma anuncia inscrição gratuita, em princípio disponível globalmente,
+   mas produtos, compras e meios de levantamento devem ser verificados para MZ.
+   O pagamento é por VENDAS elegíveis, não por apenas cliques.
+B) Admitad World of Tanks SOI: https://www.admitad.com/store/offers/world-of-tanks-soi-ww/
+   A oferta indica Moçambique entre as regiões; podes candidatar-te e consultar
+   regras, geolocalização, fontes de tráfego e comissão na tua conta.
+   Registo SOI não implica que qualquer registo seja validado.
+
+Inserir um link verdadeiro de afiliado numa página:
+<a href="URL_DA_TUA_CAMPANHA_APROVADA" rel="sponsored nofollow noopener" target="_blank">Ver oferta</a>
+Declara junto ao botão: "Este é um link de afiliado: podemos receber comissão pelas acções elegíveis".
+Não uses URLs genéricas como se fossem os teus links de afiliado.
+
+ADSENSE
+1) Usa A TUA CONTA EXISTENTE, não cries uma segunda conta em teu nome.
+2) Publica conteúdo original e melhora/contacto antes da candidatura.
+3) AdSense > Sites > Novo site > URL do blog > verificar > pedir análise.
+4) Só depois de o domínio ficar com estado Pronto/Ready insere os anúncios,
+   de acordo com as instruções oficiais e políticas de privacidade/cookies.
+5) Não cliques nos teus anúncios nem solicites cliques.
+
+EDITAR TEXTOS
+- Cada artigo está em artigos/<nome-do-artigo>.html.
+- A página principal é index.html. O estilo está em assets/style.css.
+- Ao publicar um novo artigo, inclui o link na página inicial e refaz o sitemap.
+
+NOTAS
+Este é um SITE ESTÁTICO PRONTO A PUBLICAR, não um CMS com área de administração.
+O primeiro passo é publicar; para editar por telemóvel no futuro podemos migrar a Blogger
+ou integrar um CMS adequado, mantendo a identidade visual.
