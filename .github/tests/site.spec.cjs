@@ -19,6 +19,9 @@ for(const width of widths){
   await expect(page.locator('h1')).toContainText('Joga mais.');
   await expect(page.locator('[data-post]')).toHaveCount(6);
   await expect(page.locator('img')).toHaveCount(7);
+  // Carregar deliberadamente imagens lazy antes de verificar integridade.
+  await page.locator('img').evaluateAll(images=>images.forEach(img=>{img.loading='eager';}));
+  await page.waitForFunction(()=>[...document.images].every(i=>i.complete&&i.naturalWidth>0),null,{timeout:15000});
   const layout=await page.evaluate(()=>{
    const box=e=>{const r=e.getBoundingClientRect();return {left:r.left,right:r.right,top:r.top,bottom:r.bottom,width:r.width,height:r.height};};
    const cards=[...document.querySelectorAll('[data-post]')];
