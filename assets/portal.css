@@ -66,3 +66,8 @@
 /* Portal V3 — acessibilidade e navegação tablet */
 .portal-preferences{max-width:1180px;margin:16px auto 0;text-align:right;padding:0 22px}.portal-preferences button{border:1px solid #536175;border-radius:8px;color:#cdd9e8;background:transparent;padding:7px 12px;font-size:11px}.portal-article-deeper,.portal-about-extra{max-width:850px;border-top:1px solid #344658;padding:23px 0;margin:26px 0}.portal-article-deeper h2,.portal-about-extra h2{font-size:23px!important}.portal-article-deeper p,.portal-about-extra p{color:#bfcede;font-size:15px;line-height:1.85}.portal-article-deeper a,.portal-about-extra a{color:#cfff93;text-decoration:underline}.portal-story-lead{font-size:17px!important;color:#c3d3df}
 @media (min-width:761px) and (max-width:1110px){.menutoggle{display:block}.nav-action{display:none}.navlinks{display:none!important}.navlinks.open{display:flex!important;position:absolute;top:78px;left:0;right:0;background:#111b2b;padding:18px 25px 24px;flex-direction:column;align-items:flex-start;gap:17px!important;border-bottom:1px solid #46566c;box-shadow:0 25px 40px #0008}.navlinks.open a{font-size:14px}}
+
+/* Capas completas: não cortar títulos dos jogos em desktop/mobile */
+.portal-game-content h3{white-space:normal;overflow-wrap:anywhere;min-height:2.65em;line-height:1.33;display:block}
+.portal-game-cover img{width:100%;height:100%;object-fit:cover;object-position:center;display:block}
+@media(max-width:760px){.portal-game-content h3{min-height:2.7em;font-size:13px}}
