@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://ayu-games-moz.pages.dev/</loc></url>
+  <url><loc>https://ayu-games-moz.pages.dev/mobile</loc></url>
+  <url><loc>https://ayu-games-moz.pages.dev/pc</loc></url>
+  <url><loc>https://ayu-games-moz.pages.dev/mais-jogados</loc></url>
+  <url><loc>https://ayu-games-moz.pages.dev/guias</loc></url>
+  <url><loc>https://ayu-games-moz.pages.dev/ferramentas</loc></url>
+  <url><loc>https://ayu-games-moz.pages.dev/recargas</loc></url>
   <url><loc>https://ayu-games-moz.pages.dev/sobre</loc></url>
   <url><loc>https://ayu-games-moz.pages.dev/contacto</loc></url>
   <url><loc>https://ayu-games-moz.pages.dev/transparencia</loc></url>
@@ -12,14 +18,19 @@
   <url><loc>https://ayu-games-moz.pages.dev/artigos/recargas-seguras-jogos-mobile</loc></url>
   <url><loc>https://ayu-games-moz.pages.dev/artigos/jogos-pc-gratuitos-fontes-seguras</loc></url>
   <url><loc>https://ayu-games-moz.pages.dev/artigos/jogar-com-dados-moveis</loc></url>
-  <url><loc>https://ayu-games-moz.pages.dev/mobile</loc></url>
-  <url><loc>https://ayu-games-moz.pages.dev/pc</loc></url>
-  <url><loc>https://ayu-games-moz.pages.dev/mais-jogados</loc></url>
-  <url><loc>https://ayu-games-moz.pages.dev/recargas</loc></url>
   <url><loc>https://ayu-games-moz.pages.dev/artigos/efootball-mobile-desempenho</loc></url>
   <url><loc>https://ayu-games-moz.pages.dev/artigos/roblox-seguranca-iniciantes</loc></url>
   <url><loc>https://ayu-games-moz.pages.dev/artigos/jogos-leves-android</loc></url>
   <url><loc>https://ayu-games-moz.pages.dev/artigos/counter-strike-2-melhorar-fps</loc></url>
   <url><loc>https://ayu-games-moz.pages.dev/artigos/dota-2-primeiros-passos</loc></url>
   <url><loc>https://ayu-games-moz.pages.dev/artigos/pubg-pc-travamentos</loc></url>
+  <url><loc>https://ayu-games-moz.pages.dev/destaques/black-myth-wukong</loc></url>
+  <url><loc>https://ayu-games-moz.pages.dev/destaques/star-wars-outlaws</loc></url>
+  <url><loc>https://ayu-games-moz.pages.dev/destaques/dragon-ball-sparking-zero</loc></url>
+  <url><loc>https://ayu-games-moz.pages.dev/destaques/god-of-war-ragnarok</loc></url>
+  <url><loc>https://ayu-games-moz.pages.dev/destaques/assassins-creed-shadows</loc></url>
+  <url><loc>https://ayu-games-moz.pages.dev/destaques/kingdom-come-deliverance-ii</loc></url>
+  <url><loc>https://ayu-games-moz.pages.dev/destaques/avowed</loc></url>
+  <url><loc>https://ayu-games-moz.pages.dev/destaques/gta-v</loc></url>
+  <url><loc>https://ayu-games-moz.pages.dev/destaques/fortnite</loc></url>
 </urlset>
