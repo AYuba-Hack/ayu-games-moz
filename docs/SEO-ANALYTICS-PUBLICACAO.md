@@ -25,3 +25,12 @@ Favoritos guardados no navegador; calculadora local. Rever direitos de imagem: a
 ## Testes
 
 Acompanhar GitHub Actions com Playwright e verificar mobile, links, carregamento real, Core Web Vitals e pagamento da Infolinks em Moçambique.
+
+## Expansão do catálogo — 2 de Novembro de 2026
+
+- Catálogo pesquisável em `/catalogo` com dados publicados localmente em `assets/mobile-expanded.json` e `assets/pc-expanded.json`.
+- Fontes para orientação: Google Play em Moçambique e tabelas oficiais da Steam; a lista é editorial e NÃO representa um ranking exacto dos 200 mais descarregados nem jogadores activos.
+- A homepage apresenta apenas nove cartões de jogos; catálogo carregado em lotes de 24 para reduzir consumo.
+- Jogos sem imagens verificadas têm uma imagem editorial com o nome, sem fingir ser uma capa oficial. Não importar centenas de imagens de terceiros sem verificar direitos e fiabilidade.
+- A pesquisa global envia para `/catalogo?q=...`. Verificar o endereço final sem extensão após redireccionamento Cloudflare.
+- Rever resultados de QA, indexação e Core Web Vitals após publicação.

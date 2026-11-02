@@ -1,9 +1,9 @@
 const {test,expect}=require('@playwright/test');
 const featured=["black-myth-wukong","star-wars-outlaws","dragon-ball-sparking-zero","god-of-war-ragnarok","assassins-creed-shadows","kingdom-come-deliverance-ii","avowed","gta-v","fortnite"];
-test('homepage mostra 12 jogos e 4 guias',async({page})=>{
+test('homepage compacta mostra 9 jogos e 4 guias',async({page})=>{
  await page.goto('/');
  await expect(page.locator('h1')).toContainText('Encontra o teu jogo');
- await expect(page.locator('.portal-game')).toHaveCount(12);
+ await expect(page.locator('.portal-game')).toHaveCount(9);
  await expect(page.locator('[data-post]')).toHaveCount(4);
 });
 for(const width of [320,360,390,414,540,760,768,1024,1440]){
@@ -54,4 +54,33 @@ test('guias e instituicionais',async({page})=>{
  await page.goto('/guias.html');await expect(page.locator('[data-post]')).toHaveCount(12);
  await page.goto('/privacidade.html');await expect(page.locator('h1')).toContainText('privacidade');
  await page.goto('/404.html');await expect(page.locator('h1')).toContainText('Ups');
+});
+test('Pesquisa global e catálogo expandido carregam os dados localmente', async ({page})=>{
+ await page.goto('/catalogo.html');
+ await expect(page.locator('h1')).toContainText('catálogo');
+ await expect(page.locator('.mega-card')).toHaveCount(24);
+ const totals=await page.locator('.mega-counter').innerText();
+ expect(totals).toContain('jogos encontrados');
+ await page.locator('[data-query]').fill('Wukong');
+ await expect(page.locator('.mega-card')).toHaveCount(1);
+ await page.goto('/mobile.html');
+ await expect(page.locator('.portal-game')).toHaveCount(20);
+ await expect(page.locator('.mega-card')).toHaveCount(24);
+ await page.goto('/pc.html');
+ await expect(page.locator('.portal-game')).toHaveCount(27);
+ await expect(page.locator('.mega-card')).toHaveCount(24);
+});
+test('Catálogo contém mais de 200 jogos por plataforma',async({page})=>{
+ const original=await (await page.request.get('/assets/games.json')).json();
+ const mobi=await (await page.request.get('/assets/mobile-expanded.json')).json();
+ const pc=await (await page.request.get('/assets/pc-expanded.json')).json();
+ expect(mobi.length+original.filter(g=>g.platform==='Mobile').length).toBeGreaterThan(200);
+ expect(pc.length+original.filter(g=>g.platform==='PC').length).toBeGreaterThan(200);
+});
+test('Pesquisa da homepage dirige ao catálogo',async({page})=>{
+ await page.goto('/');
+ await page.locator('.mega-featured-search input').fill('Minecraft');
+ await page.locator('.mega-featured-search button').click();
+ await expect(page).toHaveURL(/catalogo.*q=Minecraft/);
+ await expect(page.locator('.mega-card')).toHaveCount(2);
 });
