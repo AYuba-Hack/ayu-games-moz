@@ -1,0 +1,6 @@
+.cover-cache/
+dist/
+node_modules/
+qa-report/
+test-results/
+__pycache__/

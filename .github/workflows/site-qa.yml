@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - qa-lancamento
+      - qa-*
       - main
   workflow_dispatch:
 
@@ -19,6 +20,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+      - name: Verificar dados e ligações locais
+        run: node scripts/check-site.mjs
       - name: Instalar Playwright
         run: |
           npm install --no-save @playwright/test@1.56.1

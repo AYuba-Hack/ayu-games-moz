@@ -1,0 +1,388 @@
+{
+  "checkedAt": "2026-11-02",
+  "entries": [
+    {
+      "id": "mobile-extra-traffix",
+      "name": "Traffix",
+      "platform": "Mobile",
+      "genre": "Vários",
+      "price": "Pago / verificar",
+      "sourceGroup": "Google Play — pagos",
+      "sourceUrl": "https://play.google.com/store/games?gl=mz",
+      "shop": "https://play.google.com/store/search?q=Traffix&c=apps",
+      "art": null,
+      "reviewReason": "Requer confirmação da loja, edição ou imagem oficial."
+    },
+    {
+      "id": "mobile-extra-empires-puzzles",
+      "name": "Empires & Puzzles",
+      "platform": "Mobile",
+      "genre": "Vários",
+      "price": "Verificar na loja",
+      "sourceGroup": "Selecção editorial complementar",
+      "sourceUrl": "https://play.google.com/store/games?gl=mz",
+      "shop": "https://play.google.com/store/search?q=Empires%20%26%20Puzzles&c=apps",
+      "art": null,
+      "reviewReason": "Requer confirmação da loja, edição ou imagem oficial."
+    },
+    {
+      "id": "mobile-extra-clash-mini",
+      "name": "Clash Mini",
+      "platform": "Mobile",
+      "genre": "Vários",
+      "price": "Verificar na loja",
+      "sourceGroup": "Selecção editorial complementar",
+      "sourceUrl": "https://play.google.com/store/games?gl=mz",
+      "shop": "https://play.google.com/store/search?q=Clash%20Mini&c=apps",
+      "art": null,
+      "reviewReason": "Requer confirmação da loja, edição ou imagem oficial."
+    },
+    {
+      "id": "mobile-extra-real-racing-3",
+      "name": "Real Racing 3",
+      "platform": "Mobile",
+      "genre": "Vários",
+      "price": "Verificar na loja",
+      "sourceGroup": "Selecção editorial complementar",
+      "sourceUrl": "https://play.google.com/store/games?gl=mz",
+      "shop": "https://play.google.com/store/search?q=Real%20Racing%203&c=apps",
+      "art": null,
+      "reviewReason": "Requer confirmação da loja, edição ou imagem oficial."
+    },
+    {
+      "id": "mobile-extra-fall-guys-mobile",
+      "name": "Fall Guys Mobile",
+      "platform": "Mobile",
+      "genre": "Vários",
+      "price": "Verificar na loja",
+      "sourceGroup": "Selecção editorial complementar",
+      "sourceUrl": "https://play.google.com/store/games?gl=mz",
+      "shop": "https://play.google.com/store/search?q=Fall%20Guys%20Mobile&c=apps",
+      "art": null,
+      "reviewReason": "Requer confirmação da loja, edição ou imagem oficial."
+    },
+    {
+      "id": "mobile-extra-dream-league-soccer-2025",
+      "name": "Dream League Soccer 2025",
+      "platform": "Mobile",
+      "genre": "Vários",
+      "price": "Verificar na loja",
+      "sourceGroup": "Selecção editorial complementar",
+      "sourceUrl": "https://play.google.com/store/games?gl=mz",
+      "shop": "https://play.google.com/store/search?q=Dream%20League%20Soccer%202025&c=apps",
+      "art": null,
+      "reviewReason": "Requer confirmação da loja, edição ou imagem oficial."
+    },
+    {
+      "id": "mobile-extra-nba-live-mobile",
+      "name": "NBA LIVE Mobile",
+      "platform": "Mobile",
+      "genre": "Vários",
+      "price": "Verificar na loja",
+      "sourceGroup": "Selecção editorial complementar",
+      "sourceUrl": "https://play.google.com/store/games?gl=mz",
+      "shop": "https://play.google.com/store/search?q=NBA%20LIVE%20Mobile&c=apps",
+      "art": null,
+      "reviewReason": "Requer confirmação da loja, edição ou imagem oficial."
+    },
+    {
+      "id": "mobile-extra-another-eden",
+      "name": "Another Eden",
+      "platform": "Mobile",
+      "genre": "Vários",
+      "price": "Verificar na loja",
+      "sourceGroup": "Selecção editorial complementar",
+      "sourceUrl": "https://play.google.com/store/games?gl=mz",
+      "shop": "https://play.google.com/store/search?q=Another%20Eden&c=apps",
+      "art": null,
+      "reviewReason": "Requer confirmação da loja, edição ou imagem oficial."
+    },
+    {
+      "id": "mobile-extra-azur-lane",
+      "name": "Azur Lane",
+      "platform": "Mobile",
+      "genre": "Vários",
+      "price": "Verificar na loja",
+      "sourceGroup": "Selecção editorial complementar",
+      "sourceUrl": "https://play.google.com/store/games?gl=mz",
+      "shop": "https://play.google.com/store/search?q=Azur%20Lane&c=apps",
+      "art": null,
+      "reviewReason": "Requer confirmação da loja, edição ou imagem oficial."
+    },
+    {
+      "id": "mobile-extra-persona-5-the-phantom-x",
+      "name": "Persona 5: The Phantom X",
+      "platform": "Mobile",
+      "genre": "Vários",
+      "price": "Verificar na loja",
+      "sourceGroup": "Selecção editorial complementar",
+      "sourceUrl": "https://play.google.com/store/games?gl=mz",
+      "shop": "https://play.google.com/store/search?q=Persona%205%3A%20The%20Phantom%20X&c=apps",
+      "art": null,
+      "reviewReason": "Requer confirmação da loja, edição ou imagem oficial."
+    },
+    {
+      "id": "pc-extra-fivem",
+      "name": "FiveM",
+      "platform": "PC",
+      "genre": "Vários",
+      "price": "Consultar loja",
+      "sourceGroup": "Referência SteamDB e selecção editorial",
+      "sourceUrl": "https://steamdb.info/charts/",
+      "shop": "https://store.steampowered.com/search/?term=FiveM",
+      "art": null,
+      "reviewReason": "Requer confirmação da loja, edição ou imagem oficial."
+    },
+    {
+      "id": "pc-extra-wallpaper-engine",
+      "name": "Wallpaper Engine",
+      "platform": "PC",
+      "genre": "Vários",
+      "price": "Consultar loja",
+      "sourceGroup": "Referência SteamDB e selecção editorial",
+      "sourceUrl": "https://steamdb.info/charts/",
+      "shop": "https://store.steampowered.com/search/?term=Wallpaper%20Engine",
+      "art": null,
+      "reviewReason": "Aplicação de personalização, não um jogo."
+    },
+    {
+      "id": "pc-extra-grand-theft-auto-vi",
+      "name": "Grand Theft Auto VI",
+      "platform": "PC",
+      "genre": "Vários",
+      "price": "Consultar loja",
+      "sourceGroup": "Selecção editorial complementar",
+      "sourceUrl": "https://steamdb.info/charts/",
+      "shop": "https://store.steampowered.com/search/?term=Grand%20Theft%20Auto%20VI",
+      "art": null,
+      "reviewReason": "Requer confirmação da loja, edição ou imagem oficial."
+    },
+    {
+      "id": "pc-extra-the-witcher-4",
+      "name": "The Witcher 4",
+      "platform": "PC",
+      "genre": "Vários",
+      "price": "Consultar loja",
+      "sourceGroup": "Selecção editorial complementar",
+      "sourceUrl": "https://steamdb.info/charts/",
+      "shop": "https://store.steampowered.com/search/?term=The%20Witcher%204",
+      "art": null,
+      "reviewReason": "Requer confirmação da loja, edição ou imagem oficial."
+    },
+    {
+      "id": "pc-extra-ghost-of-yotei",
+      "name": "Ghost of Yōtei",
+      "platform": "PC",
+      "genre": "Vários",
+      "price": "Consultar loja",
+      "sourceGroup": "Selecção editorial complementar",
+      "sourceUrl": "https://steamdb.info/charts/",
+      "shop": "https://store.steampowered.com/search/?term=Ghost%20of%20Y%C5%8Dtei",
+      "art": null,
+      "reviewReason": "Requer confirmação da loja, edição ou imagem oficial."
+    },
+    {
+      "id": "pc-extra-mass-effect-1",
+      "name": "Mass Effect 1",
+      "platform": "PC",
+      "genre": "Vários",
+      "price": "Consultar loja",
+      "sourceGroup": "Selecção editorial complementar",
+      "sourceUrl": "https://steamdb.info/charts/",
+      "shop": "https://store.steampowered.com/search/?term=Mass%20Effect%201",
+      "art": null,
+      "reviewReason": "Requer confirmação da loja, edição ou imagem oficial."
+    },
+    {
+      "id": "pc-extra-alan-wake-remastered",
+      "name": "Alan Wake Remastered",
+      "platform": "PC",
+      "genre": "Vários",
+      "price": "Consultar loja",
+      "sourceGroup": "Selecção editorial complementar",
+      "sourceUrl": "https://steamdb.info/charts/",
+      "shop": "https://store.steampowered.com/search/?term=Alan%20Wake%20Remastered",
+      "art": null,
+      "reviewReason": "Requer confirmação da loja, edição ou imagem oficial."
+    },
+    {
+      "id": "pc-extra-alan-wake-2",
+      "name": "Alan Wake 2",
+      "platform": "PC",
+      "genre": "Vários",
+      "price": "Consultar loja",
+      "sourceGroup": "Selecção editorial complementar",
+      "sourceUrl": "https://steamdb.info/charts/",
+      "shop": "https://store.steampowered.com/search/?term=Alan%20Wake%202",
+      "art": null,
+      "reviewReason": "Requer confirmação da loja, edição ou imagem oficial."
+    },
+    {
+      "id": "pc-extra-journey",
+      "name": "Journey",
+      "platform": "PC",
+      "genre": "Vários",
+      "price": "Consultar loja",
+      "sourceGroup": "Selecção editorial complementar",
+      "sourceUrl": "https://steamdb.info/charts/",
+      "shop": "https://store.steampowered.com/search/?term=Journey",
+      "art": null,
+      "reviewReason": "Requer confirmação da loja, edição ou imagem oficial."
+    },
+    {
+      "id": "pc-extra-f1-26",
+      "name": "F1 26",
+      "platform": "PC",
+      "genre": "Vários",
+      "price": "Consultar loja",
+      "sourceGroup": "Selecção editorial complementar",
+      "sourceUrl": "https://steamdb.info/charts/",
+      "shop": "https://store.steampowered.com/search/?term=F1%2026",
+      "art": null,
+      "reviewReason": "Requer confirmação da loja, edição ou imagem oficial."
+    },
+    {
+      "id": "pc-extra-nba-2k25",
+      "name": "NBA 2K25",
+      "platform": "PC",
+      "genre": "Vários",
+      "price": "Consultar loja",
+      "sourceGroup": "Selecção editorial complementar",
+      "sourceUrl": "https://steamdb.info/charts/",
+      "shop": "https://store.steampowered.com/search/?term=NBA%202K25",
+      "art": null,
+      "reviewReason": "Requer confirmação da loja, edição ou imagem oficial."
+    },
+    {
+      "id": "pc-extra-football-manager-2024",
+      "name": "Football Manager 2024",
+      "platform": "PC",
+      "genre": "Vários",
+      "price": "Consultar loja",
+      "sourceGroup": "Selecção editorial complementar",
+      "sourceUrl": "https://steamdb.info/charts/",
+      "shop": "https://store.steampowered.com/search/?term=Football%20Manager%202024",
+      "art": null,
+      "reviewReason": "Requer confirmação da loja, edição ou imagem oficial."
+    },
+    {
+      "id": "pc-extra-football-manager-2025",
+      "name": "Football Manager 2025",
+      "platform": "PC",
+      "genre": "Vários",
+      "price": "Consultar loja",
+      "sourceGroup": "Selecção editorial complementar",
+      "sourceUrl": "https://steamdb.info/charts/",
+      "shop": "https://store.steampowered.com/search/?term=Football%20Manager%202025",
+      "art": null,
+      "reviewReason": "Requer confirmação da loja, edição ou imagem oficial."
+    },
+    {
+      "id": "pc-extra-pro-evolution-soccer-2021",
+      "name": "Pro Evolution Soccer 2021",
+      "platform": "PC",
+      "genre": "Vários",
+      "price": "Consultar loja",
+      "sourceGroup": "Selecção editorial complementar",
+      "sourceUrl": "https://steamdb.info/charts/",
+      "shop": "https://store.steampowered.com/search/?term=Pro%20Evolution%20Soccer%202021",
+      "art": null,
+      "reviewReason": "Requer confirmação da loja, edição ou imagem oficial."
+    },
+    {
+      "id": "pc-extra-starcraft-ii",
+      "name": "StarCraft II",
+      "platform": "PC",
+      "genre": "Vários",
+      "price": "Consultar loja",
+      "sourceGroup": "Selecção editorial complementar",
+      "sourceUrl": "https://steamdb.info/charts/",
+      "shop": "https://store.steampowered.com/search/?term=StarCraft%20II",
+      "art": null,
+      "reviewReason": "Requer confirmação da loja, edição ou imagem oficial."
+    },
+    {
+      "id": "pc-extra-warcraft-iii-reforged",
+      "name": "Warcraft III Reforged",
+      "platform": "PC",
+      "genre": "Vários",
+      "price": "Consultar loja",
+      "sourceGroup": "Selecção editorial complementar",
+      "sourceUrl": "https://steamdb.info/charts/",
+      "shop": "https://store.steampowered.com/search/?term=Warcraft%20III%20Reforged",
+      "art": null,
+      "reviewReason": "Requer confirmação da loja, edição ou imagem oficial."
+    },
+    {
+      "id": "pc-extra-heroes-of-the-storm",
+      "name": "Heroes of the Storm",
+      "platform": "PC",
+      "genre": "Vários",
+      "price": "Consultar loja",
+      "sourceGroup": "Selecção editorial complementar",
+      "sourceUrl": "https://steamdb.info/charts/",
+      "shop": "https://store.steampowered.com/search/?term=Heroes%20of%20the%20Storm",
+      "art": null,
+      "reviewReason": "Requer confirmação da loja, edição ou imagem oficial."
+    },
+    {
+      "id": "pc-extra-fall-guys",
+      "name": "Fall Guys",
+      "platform": "PC",
+      "genre": "Vários",
+      "price": "Consultar loja",
+      "sourceGroup": "Selecção editorial complementar",
+      "sourceUrl": "https://steamdb.info/charts/",
+      "shop": "https://store.steampowered.com/search/?term=Fall%20Guys",
+      "art": null,
+      "reviewReason": "Requer confirmação da loja, edição ou imagem oficial."
+    }
+  ],
+  "mergedDuplicates": [
+    {
+      "id": "mobile-extra-free-fire",
+      "name": "Free Fire",
+      "canonicalId": "mobile-free-fire"
+    },
+    {
+      "id": "mobile-extra-league-of-legends-wild-rift",
+      "name": "League of Legends: Wild Rift",
+      "canonicalId": "mobile-extra-wild-rift"
+    },
+    {
+      "id": "mobile-extra-chess-com",
+      "name": "Chess.com",
+      "canonicalId": "mobile-extra-chess-play-and-learn"
+    },
+    {
+      "id": "mobile-extra-nikke-goddess-of-victory",
+      "name": "Nikke: Goddess of Victory",
+      "canonicalId": "mobile-extra-goddess-of-victory-nikke"
+    },
+    {
+      "id": "pc-extra-grand-theft-auto-v-enhanced",
+      "name": "Grand Theft Auto V Enhanced",
+      "canonicalId": "pc-gta-v"
+    },
+    {
+      "id": "pc-extra-resident-evil-4-remake",
+      "name": "Resident Evil 4 Remake",
+      "canonicalId": "pc-extra-resident-evil-4"
+    },
+    {
+      "id": "pc-extra-dead-space-remake",
+      "name": "Dead Space Remake",
+      "canonicalId": "pc-extra-dead-space"
+    },
+    {
+      "id": "pc-extra-football-manager-2026",
+      "name": "Football Manager 2026",
+      "canonicalId": "pc-extra-football-manager-26"
+    },
+    {
+      "id": "pc-extra-civilization-vii",
+      "name": "Civilization VII",
+      "canonicalId": "pc-extra-sid-meier-s-civilization-vii"
+    }
+  ]
+}
