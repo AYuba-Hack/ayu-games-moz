@@ -85,3 +85,19 @@ test('Pesquisa da homepage dirige ao catálogo',async({page})=>{
  const resultCount=await page.locator('.mega-card').count();
  expect(resultCount).toBeGreaterThanOrEqual(2);
 });
+
+test('Comparador mostra os dois títulos seleccionados',async({page})=>{
+ await page.goto('/comparar.html');
+ await page.locator('[data-game-one]').fill('Free Fire');
+ await page.locator('[data-game-two]').fill('Cyberpunk 2077');
+ await page.locator('[data-compare-form] button').click();
+ await expect(page.locator('.mega-compare-card')).toHaveCount(2);
+});
+test('Catálogo permite ocultar capas para poupar dados',async({page})=>{
+ await page.goto('/catalogo.html');
+ await expect(page.locator('.mega-card')).toHaveCount(24);
+ await page.locator('[data-lite]').check();
+ await expect(page.locator('.mega-card .mega-art img')).toHaveCount(0);
+ await page.reload();
+ await expect(page.locator('[data-lite]')).toBeChecked();
+});
