@@ -63,6 +63,7 @@ test('Pesquisa global e catálogo expandido carregam os dados localmente', async
  expect(totals).toContain('jogos encontrados');
  await page.locator('[data-query]').fill('Wukong');
  await expect(page.locator('.mega-card')).toHaveCount(1);
+ await expect(page.locator('[data-count]')).toHaveText('1 jogo encontrado • 1 apresentado');
  await page.goto('/mobile.html');
  await expect(page.locator('.portal-game')).toHaveCount(20);
  await expect(page.locator('.mega-card')).toHaveCount(24);
@@ -204,4 +205,27 @@ test('catálogo: mostrar mais preserva os cartões e pesquisa vazia permite recu
  await page.locator('[data-query]').fill('');
  await expect(page.locator('.mega-card')).toHaveCount(24);
  await expect(page.locator('.mega-empty')).toHaveCount(0);
+});
+
+
+test('categorias só incluem jogos da plataforma seleccionada', async ({page}) => {
+ await page.goto('/catalogo.html');
+ await expect(page.locator('.mega-card').first()).toBeVisible();
+ const platform=page.locator('[data-platform]'),genre=page.locator('[data-genre]');
+ for(const value of ['Mobile','PC']){
+  await genre.selectOption('');
+  await platform.selectOption(value);
+  const options=await genre.locator('option').evaluateAll(elements=>elements.map(x=>x.value).filter(Boolean));
+  expect(options.length).toBeGreaterThan(0);
+  for(const category of options){
+   await genre.selectOption(category);
+   await expect(page.locator('.mega-card').first()).toBeVisible();
+   await expect(page.locator('.mega-meta').first()).toHaveText(value+' · '+category);
+  }
+ }
+ // Switching away from a category that has no Mobile games restores all categories.
+ await genre.selectOption('RPG histórico');
+ await platform.selectOption('Mobile');
+ await expect(genre).toHaveValue('');
+ await expect(page.locator('.mega-card').first()).toBeVisible();
 });
