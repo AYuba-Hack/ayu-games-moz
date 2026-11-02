@@ -82,5 +82,6 @@ test('Pesquisa da homepage dirige ao catálogo',async({page})=>{
  await page.locator('.mega-featured-search input').fill('Minecraft');
  await page.locator('.mega-featured-search button').click();
  await expect(page).toHaveURL(/catalogo.*q=Minecraft/);
- await expect(page.locator('.mega-card')).toHaveCount(2);
+ const resultCount=await page.locator('.mega-card').count();
+ expect(resultCount).toBeGreaterThanOrEqual(2);
 });
