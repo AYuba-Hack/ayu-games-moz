@@ -19,7 +19,7 @@ const load=async()=>{const all=await Promise.all(DATA.map(async u=>{const r=awai
 const seen=new Set(),data=[];for(const item of all.flat()){const key=item.platform+":"+norm(item.name).replace(/[^a-z0-9]/g,"");if(seen.has(key))continue;seen.add(key);data.push({...item,genre:item.genre==="Vários"||!item.genre?genreOf(item.name):item.genre});}
 return data;};
 const e=(s)=>{const d=document.createElement("div");d.textContent=String(s??"");return d.innerHTML};
-function init(el,all){let shown=pageSize;let platform=el.dataset.platform||"Todos";
+function init(el,items){const all=el.dataset.extraOnly==="true"?items.filter(g=>g.id.includes("-extra-")):items;let shown=pageSize;let platform=el.dataset.platform||"Todos";
 const wrap=document.createElement("div");wrap.className="mega-panel";
 wrap.innerHTML='<div class="mega-toolbar"><label class="mega-search"><span>Pesquisar jogo</span><input type="search" placeholder="Ex.: Free Fire, GTA, Minecraft..." data-query autocomplete="off"></label><label class="mega-platform"><span>Plataforma</span><select data-platform><option value="Todos">Todas</option><option value="Mobile">Mobile</option><option value="PC">PC</option></select></label><label><span>Categoria</span><select data-genre><option value="">Todas</option></select></label></div><p class="mega-counter" aria-live="polite" data-count></p><div class="mega-grid" data-cards></div><div class="mega-actions"><button type="button" data-more>Mostrar mais jogos</button></div>';
 el.append(wrap);const q=wrap.querySelector("[data-query]"),p=wrap.querySelector("[data-platform]"),genre=wrap.querySelector("[data-genre]"),cards=wrap.querySelector("[data-cards]"),counter=wrap.querySelector("[data-count]"),more=wrap.querySelector("[data-more]");
