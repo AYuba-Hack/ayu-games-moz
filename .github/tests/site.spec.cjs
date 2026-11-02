@@ -211,7 +211,7 @@ test('catálogo: mostrar mais preserva os cartões e pesquisa vazia permite recu
 test('categorias só incluem jogos da plataforma seleccionada', async ({page}) => {
  await page.goto('/catalogo.html');
  await expect(page.locator('.mega-card').first()).toBeVisible();
- const platform=page.locator('[data-platform]'),genre=page.locator('[data-genre]');
+ const platform=page.locator('select[data-platform]'),genre=page.locator('[data-genre]');
  for(const value of ['Mobile','PC']){
   await genre.selectOption('');
   await platform.selectOption(value);
