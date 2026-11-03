@@ -32,7 +32,7 @@
   }
 
   function loadAds() {
-    if (loaded || /^\/(?:fichas\/|sobre|contacto|parcerias|privacidade|termos|transparencia|404|ferramentas)/.test(location.pathname)) return;
+    if (loaded || /^\/(?:fichas\/|jogo(?:\.html)?(?:$|\/)|sobre|contacto|parcerias|privacidade|termos|transparencia|404|ferramentas)/.test(location.pathname)) return;
     loaded = true;
     window.infolinks_pid = 3449077;
     window.infolinks_wsid = 0;

@@ -1,4 +1,6 @@
 .cover-cache/
+.guide-cache/
+.openai/
 dist/
 node_modules/
 qa-report/

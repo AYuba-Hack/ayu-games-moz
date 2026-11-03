@@ -83,10 +83,8 @@
         card.append(row);
       }
       const link = document.createElement('a');
-      link.href = game.shop;
-      link.target = '_blank';
-      link.rel = 'noopener noreferrer';
-      link.textContent = 'Ver na loja ↗';
+      link.href = '/jogo.html?id=' + encodeURIComponent(game.id);
+      link.textContent = 'Ver guia completo →';
       card.append(link);
       grid.append(card);
     }

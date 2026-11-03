@@ -3,3 +3,5 @@
 .mega-lite{grid-column:1/-1;display:flex!important;align-items:center;flex-direction:row!important;gap:8px;font-size:12px}.mega-lite input{width:auto!important;accent-color:#caff8e}.mega-links{display:flex;flex-wrap:wrap;gap:9px;margin-top:13px}.mega-links a{display:inline-block;color:#caff91;border:1px solid #4a5c6d;padding:8px 12px;border-radius:9px;font-size:12px;font-weight:750}
 
 .mega-art img.mega-art-icon{object-fit:contain;padding:12px}.mega-empty{grid-column:1/-1;padding:22px;background:#152436;border-radius:12px;color:#d1e2ee}.mega-toolbar label[hidden]{display:none!important}.mega-compare-form button:disabled{opacity:.55;cursor:wait}
+
+.mega-card h3 a{font:inherit;color:inherit}.mega-card h3 a:hover{color:var(--accent)}

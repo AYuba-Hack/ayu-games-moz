@@ -24,6 +24,44 @@ for(const game of groups.flat()){
  assert.ok(!stores.has(store),'Duplicate official store entry: '+game.id);stores.add(store);
 }
 assert.ok(totals.Mobile>200 && totals.PC>200,'More than 200 games per platform required');
+const guideDir=path.join(root,'assets','guide-data');
+const guides=new Map();
+const guideShard=id=>[...id].reduce((hash,c)=>(hash*31+c.charCodeAt(0))%32,0);
+for(let n=0;n<32;n++){
+ const file=String(n).padStart(2,'0')+'.json';
+ const raw=await readFile(path.join(guideDir,file),'utf8');
+ assert.ok(Buffer.byteLength(raw)<220000,'Keep guide downloads small: '+file);
+ const rows=JSON.parse(raw);
+ for(const [id,g] of Object.entries(rows)){
+  assert.equal(id,g.id,'Guide ID mismatch');
+  assert.ok(ids.has(id)&&!guides.has(id),'Unknown or repeated guide: '+id);
+  assert.equal(guideShard(id),n,'Wrong guide shard: '+id);guides.set(id,g);
+  assert.equal(typeof g.available,'boolean','Source availability required: '+id);
+  assert.match(g.checkedAt,/^\d{4}-\d{2}-\d{2}$/,'Source date: '+id);
+  assert.equal(new URL(g.source).protocol,'https:','Official source: '+id);
+  assert.ok(Array.isArray(g.screenshots)&&g.screenshots.length<=4,'Gallery size: '+id);
+  assert.equal(new Set(g.screenshots.map(x=>x.full)).size,g.screenshots.length,'Repeated screenshots: '+id);
+  for(const shot of g.screenshots)for(const key of ['thumb','full']){
+   const url=new URL(shot[key],'https://ayu-games-moz.pages.dev');
+   assert.equal(url.protocol,'https:','Unsafe screenshot URL: '+id);
+   if(shot[key].startsWith('/'))await stat(path.join(root,shot[key].slice(1)));
+  }
+  for(const value of [g.excerpt,...Object.values(g.requirements||{})])if(value)assert.ok(!/<[^>]+>/.test(value),'Guide data must be plain text: '+id);
+  if(g.practicalGuide)await stat(path.join(root,g.practicalGuide.replace(/^\//,'')));
+ }
+}
+assert.equal(guides.size,ids.size,'Every game must have a guide');
+const guideSearch=JSON.parse(await readFile(path.join(root,'assets','guide-search.json'),'utf8'));
+assert.deepEqual(new Set(guideSearch.map(g=>g.id)),ids,'Search must include every guide');
+for(const g of groups.flat()){
+ const detail=guides.get(g.id);assert.equal(detail.name,g.name);assert.equal(detail.platform,g.platform);assert.equal(detail.shop,g.shop);
+ if(detail.available&&g.shop.includes('play.google.com'))assert.equal(new URL(detail.source).searchParams.get('id'),new URL(g.shop).searchParams.get('id'),'Wrong app listing: '+g.id);
+}
+const manifest=JSON.parse(await readFile(path.join(guideDir,'manifest.json'),'utf8'));
+assert.equal(manifest.total,guides.size);
+assert.equal(manifest.available,[...guides.values()].filter(x=>x.available).length);
+assert.equal(manifest.withFourImages,[...guides.values()].filter(x=>x.screenshots.length===4).length);
+assert.deepEqual(new Set(manifest.unavailable),new Set([...guides.values()].filter(x=>!x.available).map(x=>x.id)));
 for(const filename of files){
  if(filename.endsWith('.js')||filename.endsWith('.mjs')||filename.endsWith('.cjs'))execFileSync(process.execPath,['--check',filename]);
  if(!filename.endsWith('.html'))continue;
@@ -45,4 +83,4 @@ for(const filename of files){
   assert.ok(exists,'Broken local reference '+target+' in '+path.relative(root,filename));
  }
 }
-console.log('OK: '+totals.Mobile+' Mobile + '+totals.PC+' PC; unique IDs/stores, artwork/source URLs, local references and JavaScript syntax.');
+console.log('OK: '+totals.Mobile+' Mobile + '+totals.PC+' PC; '+guides.size+' guides, '+manifest.withFourImages+' four-image galleries, unique IDs/stores, sources, local references and JavaScript syntax.');

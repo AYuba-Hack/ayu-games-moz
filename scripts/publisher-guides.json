@@ -1,0 +1,191 @@
+{
+  "pc-minecraft": {
+    "store": "Site do titular",
+    "source": "https://www.minecraft.net/pt-pt/about-minecraft",
+    "developer": [
+      "Mojang Studios"
+    ],
+    "publisher": [],
+    "free": false,
+    "systems": [],
+    "screenshots": [
+      {
+        "thumb": "/assets/img/guides/pc-minecraft/1-thumb.webp",
+        "full": "/assets/img/guides/pc-minecraft/1-full.webp",
+        "label": "Steve e Alex a construir um castelo e uma torre de vigia numa colina.",
+        "original": "https://www.minecraft.net/content/dam/minecraftnet/games/minecraft/screenshots/CREATE_BuildAlmostAnything.png"
+      },
+      {
+        "thumb": "/assets/img/guides/pc-minecraft/2-thumb.webp",
+        "full": "/assets/img/guides/pc-minecraft/2-full.webp",
+        "label": "Uma montanha coberta pela neve no Minecraft está repleta de carvalhos, pinheiros e cerejeiras.",
+        "original": "https://www.minecraft.net/content/dam/minecraftnet/games/minecraft/screenshots/EXPLORE_PDPScreenshotRefresh2024_multipleBiomes_01.png"
+      },
+      {
+        "thumb": "/assets/img/guides/pc-minecraft/3-thumb.webp",
+        "full": "/assets/img/guides/pc-minecraft/3-full.webp",
+        "label": "Zombies, esqueletos e creepers aproximam-se durante a noite de uma pequena casa defendida pela Alex e pelo Steve.",
+        "original": "https://www.minecraft.net/content/dam/minecraftnet/games/minecraft/screenshots/SURVIVE.png"
+      },
+      {
+        "thumb": "/assets/img/guides/pc-minecraft/4-thumb.webp",
+        "full": "/assets/img/guides/pc-minecraft/4-full.webp",
+        "label": "3 personagens do Minecraft a sair de um portal do submundo para o Mundo Superior.",
+        "original": "https://www.minecraft.net/content/dam/minecraftnet/games/minecraft/screenshots/PLAYTOGETHERPDPScreenshotRefresh2024_exitingPortal_01.png"
+      }
+    ]
+  },
+  "pc-league-of-legends": {
+    "store": "Site do titular",
+    "source": "https://www.leagueoflegends.com/pt-br/how-to-play/",
+    "developer": [
+      "Riot Games"
+    ],
+    "publisher": [],
+    "free": true,
+    "systems": [],
+    "screenshots": [
+      {
+        "thumb": "/assets/img/guides/pc-league-of-legends/1-thumb.webp",
+        "full": "/assets/img/guides/pc-league-of-legends/1-full.webp",
+        "label": "Cena de jogo 1 · vídeo oficial",
+        "original": "https://cmsassets.rgpub.io/sanity/files/dsfx7636/news/4e93ce961e97e3b09785aee6a5c3f9a62ce3a3ab.webm?accountingTag=LoL",
+        "frameSeconds": 2.502
+      },
+      {
+        "thumb": "/assets/img/guides/pc-league-of-legends/2-thumb.webp",
+        "full": "/assets/img/guides/pc-league-of-legends/2-full.webp",
+        "label": "Cena de jogo 2 · vídeo oficial",
+        "original": "https://cmsassets.rgpub.io/sanity/files/dsfx7636/news/4e93ce961e97e3b09785aee6a5c3f9a62ce3a3ab.webm?accountingTag=LoL",
+        "frameSeconds": 7.006
+      },
+      {
+        "thumb": "/assets/img/guides/pc-league-of-legends/3-thumb.webp",
+        "full": "/assets/img/guides/pc-league-of-legends/3-full.webp",
+        "label": "Cena de jogo 3 · vídeo oficial",
+        "original": "https://cmsassets.rgpub.io/sanity/files/dsfx7636/news/8d49feeb42c45ac59b1d6cc1cae71d64ce0089f7.webm?accountingTag=LoL",
+        "frameSeconds": 3.0
+      },
+      {
+        "thumb": "/assets/img/guides/pc-league-of-legends/4-thumb.webp",
+        "full": "/assets/img/guides/pc-league-of-legends/4-full.webp",
+        "label": "Cena de jogo 4 · vídeo oficial",
+        "original": "https://cmsassets.rgpub.io/sanity/files/dsfx7636/news/9b52333c4284f3e8e95a36981ba76c11820e0ac5.webm?accountingTag=LoL",
+        "frameSeconds": 1.9
+      }
+    ],
+    "galleryNote": "Capturas dos vídeos de introdução e dos tutoriais oficiais da Riot Games. O aspecto pode mudar com as actualizações."
+  },
+  "pc-valorant": {
+    "store": "Site do titular",
+    "source": "https://playvalorant.com/en-us/news/game-updates/valorant-asset-kit/",
+    "developer": [
+      "Riot Games"
+    ],
+    "publisher": [],
+    "free": true,
+    "systems": [],
+    "screenshots": [
+      {
+        "thumb": "/assets/img/guides/pc-valorant/1-thumb.webp",
+        "full": "/assets/img/guides/pc-valorant/1-full.webp",
+        "label": "Reveal Hallway",
+        "original": "https://cmsassets.rgpub.io/sanity/files/dsfx7636/news_live/b32c75d03c3b9008c78158764d2c9b4b7df10ff8.zip"
+      },
+      {
+        "thumb": "/assets/img/guides/pc-valorant/2-thumb.webp",
+        "full": "/assets/img/guides/pc-valorant/2-full.webp",
+        "label": "FirstLook Fire",
+        "original": "https://cmsassets.rgpub.io/sanity/files/dsfx7636/news_live/b32c75d03c3b9008c78158764d2c9b4b7df10ff8.zip"
+      },
+      {
+        "thumb": "/assets/img/guides/pc-valorant/3-thumb.webp",
+        "full": "/assets/img/guides/pc-valorant/3-full.webp",
+        "label": "Reveal BSite",
+        "original": "https://cmsassets.rgpub.io/sanity/files/dsfx7636/news_live/b32c75d03c3b9008c78158764d2c9b4b7df10ff8.zip"
+      },
+      {
+        "thumb": "/assets/img/guides/pc-valorant/4-thumb.webp",
+        "full": "/assets/img/guides/pc-valorant/4-full.webp",
+        "label": "Reveal Window",
+        "original": "https://cmsassets.rgpub.io/sanity/files/dsfx7636/news_live/b32c75d03c3b9008c78158764d2c9b4b7df10ff8.zip"
+      }
+    ]
+  },
+  "pc-roblox": {
+    "store": "Site do titular",
+    "source": "https://about.roblox.com/press-kit",
+    "developer": [
+      "Roblox Corporation"
+    ],
+    "publisher": [],
+    "free": true,
+    "systems": [],
+    "screenshots": [
+      {
+        "thumb": "/assets/img/guides/pc-roblox/1-thumb.webp",
+        "full": "/assets/img/guides/pc-roblox/1-full.webp",
+        "label": "Experiências na plataforma",
+        "original": "https://cms-media.roblox.com/assets/k3ovmikhq2okt0tuyvs1.zip"
+      },
+      {
+        "thumb": "/assets/img/guides/pc-roblox/2-thumb.webp",
+        "full": "/assets/img/guides/pc-roblox/2-full.webp",
+        "label": "Experiências Roblox",
+        "original": "https://cms-media.roblox.com/assets/k3ovmikhq2okt0tuyvs1.zip"
+      },
+      {
+        "thumb": "/assets/img/guides/pc-roblox/3-thumb.webp",
+        "full": "/assets/img/guides/pc-roblox/3-full.webp",
+        "label": "Interface num computador",
+        "original": "https://cms-media.roblox.com/assets/k3ovmikhq2okt0tuyvs1.zip"
+      },
+      {
+        "thumb": "/assets/img/guides/pc-roblox/4-thumb.webp",
+        "full": "/assets/img/guides/pc-roblox/4-full.webp",
+        "label": "Material promocional da plataforma",
+        "original": "https://cms-media.roblox.com/assets/k3ovmikhq2okt0tuyvs1.zip"
+      }
+    ],
+    "galleryNote": "Imagens oficiais da plataforma Roblox: experiências, interface de computador e material promocional. O aspecto varia conforme a experiência escolhida."
+  },
+  "pc-fortnite": {
+    "store": "Epic Games Store",
+    "source": "https://store.epicgames.com/pt-BR/p/fortnite",
+    "developer": [
+      "Epic Games"
+    ],
+    "publisher": [],
+    "free": true,
+    "systems": [
+      "Windows"
+    ],
+    "screenshots": [
+      {
+        "thumb": "/assets/img/guides/pc-fortnite/1-thumb.webp",
+        "full": "/assets/img/guides/pc-fortnite/1-full.webp",
+        "label": "Fortnite",
+        "original": "https://cdn1.epicgames.com/spt-assets/prod-fn/Screenshot_1-1x5p7.jpg"
+      },
+      {
+        "thumb": "/assets/img/guides/pc-fortnite/2-thumb.webp",
+        "full": "/assets/img/guides/pc-fortnite/2-full.webp",
+        "label": "LEGO Fortnite Odyssey",
+        "original": "https://cdn2.unrealengine.com/fnjn-01-egs-launcher-pdp-1280x720-screenshots-06-1280x720-d1b8e07ac3ad.jpg"
+      },
+      {
+        "thumb": "/assets/img/guides/pc-fortnite/3-thumb.webp",
+        "full": "/assets/img/guides/pc-fortnite/3-full.webp",
+        "label": "Fortnite Festival",
+        "original": "https://cdn2.unrealengine.com/fnsp-41-30-anvilalarm-egs-gameplayscreenshot1-3840x2160-3840x2160-374bce1d125d.jpg"
+      },
+      {
+        "thumb": "/assets/img/guides/pc-fortnite/4-thumb.webp",
+        "full": "/assets/img/guides/pc-fortnite/4-full.webp",
+        "label": "LEGO Fortnite Odyssey — combate",
+        "original": "https://cdn2.unrealengine.com/fnjn-33-10-stormking-gameplay-screenshots-1280x720-03-3840x2160-3bbf95bccfe5.jpg"
+      }
+    ],
+    "galleryNote": "Imagens divulgadas para diferentes experiências do Fortnite, incluindo LEGO Fortnite Odyssey e Fortnite Festival. Os modos podem apresentar interfaces e requisitos diferentes."
+  }
+}
