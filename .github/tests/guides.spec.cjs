@@ -28,8 +28,9 @@ test('cada cartão abre um guia com dados, requisitos, imagens e artigo relacion
 });
 test('galeria amplia, avança, volta, responde ao teclado e devolve o foco',async({page})=>{
  await stableImages(page);await page.goto('/jogo.html?id=mobile-free-fire');
+ if(await page.locator('[data-consent-no]').isVisible())await page.locator('[data-consent-no]').click();
  const first=page.locator('[data-screenshot="0"]');await expect(first).toBeVisible();
- await first.click();const dialog=page.getByRole('dialog');
+ await first.click();const dialog=page.getByRole('dialog',{name:'Imagens de Garena Free Fire',exact:true});
  await expect(dialog).toBeVisible();await expect(dialog).toContainText('1 de 4');
  await page.getByRole('button',{name:'Seguinte →',exact:true}).click();await expect(dialog).toContainText('2 de 4');
  await page.keyboard.press('ArrowLeft');await expect(dialog).toContainText('1 de 4');
