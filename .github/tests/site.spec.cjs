@@ -106,9 +106,9 @@ test('Catálogo permite ocultar capas para poupar dados',async({page})=>{
 for (const width of [320, 390, 768, 1440]) {
  test('catálogo e comparador cabem no ecrã '+width, async ({page}) => {
   await page.setViewportSize({width,height:850});
-  for (const path of ['/catalogo.html','/mobile.html','/pc.html','/comparar.html']) {
+  for (const path of ['/catalogo.html','/mobile.html','/pc.html','/comparar.html','/parcerias.html']) {
    await page.goto(path);
-   if (path !== '/comparar.html') await expect(page.locator('.mega-card').first()).toBeVisible();
+   if (['/catalogo.html','/mobile.html','/pc.html'].includes(path)) await expect(page.locator('.mega-card').first()).toBeVisible();
    expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(width+2);
   }
  });
@@ -141,6 +141,10 @@ test('privacidade: aceitação pode ser revogada sem novo aviso ao navegar', asy
  await expect(page.locator('script[src*="infolinks.com"]')).toHaveCount(0);
  await page.locator('[data-consent-yes]').click();
  await expect(page.locator('script[src*="infolinks.com"]')).toHaveCount(1);
+ await page.goto('/parcerias.html');
+ await expect(page.locator('h1')).toContainText('O teu jogo');
+ await expect(page.getByRole('link',{name:'Propor uma parceria ↗',exact:true})).toHaveAttribute('href',/^https:\/\/wa.me\/258870197738\?text=/);
+ await expect(page.locator('script[src*="infolinks.com"]')).toHaveCount(0);
  await page.goto('/guias.html');
  await expect(page.locator('.portal-consent')).toHaveCount(0);
  await expect(page.locator('script[src*="infolinks.com"]')).toHaveCount(1);
